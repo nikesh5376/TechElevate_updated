@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses | TechElevate</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="index.html#contact-us">Contact</a></li>
+      <li><button id="darkToggle">🌙</button></li>
+    </ul>
+  </nav>
+
+  <header class="banner">
+    <h1>Explore Our Courses</h1>
+    <p>Upskill with curated, real-world content</p>
+  </header>
+
+  <div class="separator"></div>
+
+  <section class="courses">
+    <h2>Available Programs</h2>
+    <input type="text" id="search" placeholder="Search courses...">
+    <div class="course-container">
+      <div class="course-card">
+        <img src="https://i.ytimg.com/vi/txr7iB4NFEE/hq720.jpg" alt="DSA">
+        <h3>Data Structures</h3>
+        <p>Learn arrays, trees, sorting, recursion, etc.</p>
+        <button class="view-more" data-title="Data Structures" data-description="Master core data structures used in competitive programming and real-world systems." data-syllabus="1. Arrays\n2. Trees\n3. Stacks\n4. Sorting\n5. Recursion">View More</button>
+      </div>
+      <div class="course-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRl_6AuG1TxzQdGmZSN4pF02iLepIl6-4ucQ&s" alt="Web Dev">
+        <h3>Web Development</h3>
+        <p>HTML, CSS, JavaScript, React & more.</p>
+        <button class="view-more" data-title="Web Development" data-description="Become a full-stack web developer with hands-on frontend and backend skills." data-syllabus="1. HTML/CSS\n2. JavaScript\n3. React\n4. Node.js\n5. REST APIs">View More</button>
+      </div>
+      <div class="course-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRoj4swMAexpCErqJ80b4n8KKdrnJBffn2iw&s" alt="App Dev">
+        <h3>App Development</h3>
+        <p>Build Android apps using Java/Kotlin.</p>
+        <button class="view-more" data-title="App Development" data-description="Create scalable, beautiful Android apps with real-time backend connectivity." data-syllabus="1. Java\n2. Kotlin\n3. UI/UX\n4. Firebase\n5. Publishing">View More</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="separator"></div>
+
+  <footer>
+    <p>&copy; 2025 TechElevate. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Instagram</a>
+    </div>
+  </footer>
+
+  <!-- Course Modal -->
+  <div id="courseModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDescription"></p>
+      <pre id="modalSyllabus"></pre>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
